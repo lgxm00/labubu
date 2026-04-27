@@ -1263,13 +1263,13 @@ body.dark-mode .bottom_con .cn_title {
 }
 
 .banner3 {
-    background: url(/labubu/banner3.jpg) no-repeat;
+    background: url('https://fastly.jsdelivr.net/gh/lgxm00/labubu@main/banner3.jpg') no-repeat;
     background-size: 100%;
     margin-bottom: 8.333vw;
 }
 
 .banner4 {
-    background: url(/labubu/banner4.jpg) no-repeat;
+    background: url('https://fastly.jsdelivr.net/gh/lgxm00/labubu@main/banner4.jpg') no-repeat;
     background-size: 100%;
 }
 
