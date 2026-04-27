@@ -1186,32 +1186,32 @@ body.dark-mode .bottom_con .cn_title {
 
 .history .list .item:first-of-type {
     color: #d33339;
-    background-image: url(../img/H1.jpg);
+    background-image: url(/labubu/H1.jpg);
 }
 
 .history .list .item:nth-of-type(2) {
     color: #c6acd3;
-    background-image: url(../img/H2.jpg);
+    background-image: url(/labubu/H2.jpg);
 }
 
 .history .list .item:nth-of-type(3) {
     color: #e77b30;
-    background-image: url(../img/H3.jpg);
+    background-image: url(/labubu/H3.jpg);
 }
 
 .history .list .item:nth-of-type(4) {
     color: #add9d9;
-    background-image: url(../img/H4.jpg);
+    background-image: url(/labubu/H4.jpg);
 }
 
 .history .list .item:nth-of-type(5) {
     color: #ffffc7;
-    background-image: url(../img/H5.jpg);
+    background-image: url(/labubu/H5.jpg);
 }
 
 .history .list .item:nth-of-type(6) {
     color: #fff;
-    background-image: url(../img/H6.jpg);
+    background-image: url(/labubu/H6.jpg);
 }
 
 .history .list .item .year {
