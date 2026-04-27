@@ -1,0 +1,167 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* 防止滚动条 */
+    position: relative; /* 作为定位上下文 */
+}
+
+video {
+    position: fixed; /* 固定定位，占据整个视口 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持比例填充 */
+    z-index: -1; /* 放在最底层 */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* 添加透明背景 */
+    backdrop-filter: blur(5px); /* 添加模糊效果（现代浏览器支持） */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 650px;
+    height: 415px;
+    position: relative;
+    z-index: 1; /* 确保在视频上方 */
+}
+.form-box{
+	position: absolute;
+	top: -10%;
+	left: 5%;
+	background-color:rgb(91, 74, 66);
+	width: 320px;
+	height: 500px;
+	border-radius: 5px;
+	box-shadow:  2px 0 10px rgba(0,0,0,0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	transition: 0.5s ease-in-out;
+}
+.register-box,.login-box{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 200px;
+}
+.hidden{
+	display: none;
+	transition:0.5s;
+}
+h1{
+	text-align: center;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 5px;
+}
+input{
+	background-color: transparent;
+	width: 100%;
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid rgba(255,255,0.4);
+	padding: 10px 0;
+	margin: 8px 0;
+	text-indent: 10px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	
+}
+input::placeholder{
+	color: #fff;
+}
+input:focus{
+	color: #a262ad;
+	outline: none;
+	border-bottom: 1px solid #a262ad80;
+	transition: 0.5s;
+}
+
+input:focus::placeholder{
+	opacity: 0;
+}
+.form-box button{
+	width:100% ;
+	margin-top: 35px;
+	background-color: #f6f6f6;
+	outline: none;
+	border-radius: 8px;
+	padding: 13px;
+	color: rgb(91, 74, 66);
+	letter-spacing: 2px;
+	border: none;
+	cursor: pointer;
+}
+.form-box button:hover{
+	background-color: #A262AD;
+	color: #F6F6F6;
+	transition: background-color 0.5s ease; 
+}
+.con-box{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.con-box.left{
+	left: -2%;
+}
+.con-box.right{
+	right: -2%;
+}
+.con-box h2{
+	color: gray;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-bottom: 4px;
+}
+.con-box p{
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: gray;
+	text-align: center;
+}
+.con-box span{
+	color: #D3B7D8;
+}
+.con-box img{
+	width: 150px;
+	height: 150px;
+	opacity: 0.9;
+	margin: 40px 0;
+}
+.con-box button{
+	margin-top: 3%;
+	background-color: #fff;
+	color: rgb(91, 74, 66);
+	border: 1px solid #D3B7D8;
+	padding: 6px 10px;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	outline: none;
+	cursor: pointer;
+}
+
+.con-box button:hover{
+	background-color: #D3B7D8;
+	color: #fff;
+}

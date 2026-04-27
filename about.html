@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/labubu/">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/labubu/css.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar">
+		<div class="container">
+			<a href="index.html" class="logo"><img src="/labubu/logo1.png" alt="" width="160px" height="50px"/></a>
+			<ul class="nav-links">
+				<li><a href="index.html">首页</a></li>
+
+				<!-- 产品展示 - 添加下拉菜单 -->
+				<li class="dropdown">
+					<a href="products.html" class="dropdown-toggle">产品展示
+						<i class="fa-solid fa-chevron-down"></i>
+					</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html?category=doll">玩偶</a></li>
+                        <li><a href="products.html?category=clothing">服饰</a></li>
+                        <li><a href="products.html?category=blindbox">盲盒</a></li>
+                        <li><a href="products.html?category=home">家居用品</a></li>
+                        <li><a href="products.html?category=accessory">配饰</a></li>
+                    </ul>
+				</li>
+
+				<li><a href="about.html" class="active">关于我们</a></li>
+				<li><a href="news.html">新闻资讯</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+				<li><a href="login.html">登录</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle-btn">🌙 夜间模式</button>
+                </li>
+			</ul>
+		</div>
+	</nav>
+
+    <!-- 页面标题 -->
+     <img src="/labubu/banner1.jpg" alt="" width="100%" height="100%" />
+
+    <!-- 关于我们 -->
+    <section class="about-intro" id="aboutIntro">
+        <h2>INTRODUCTION</h2>
+        <h3>品牌介绍</h3>
+        <div>
+            <p>泡泡玛特（09992.HK）成立于2010年，作为全球领先的潮流文化娱乐集团，泡泡玛特以IP为核心，为全球创作者打造了全链路创意孵化与运营平台，给消费者提供令人心动的产品、服务及美好的娱乐体验。</p>
+            <br>
+            <p>泡泡玛特在全球范围内挖掘极具潜力的潮流艺术家和设计师，通过成熟的IP运营体系，打造潮流文化领域备受欢迎的IP形象及产品。目前孵化及开发了MOLLY、SKULLPANDA、DIMOO、THE MONSTERS、Hirono等知名IP。公司围绕旗下IP推出众多广受欢迎的潮玩及周边商品，不断引领消费潮流。截至2025年上半年，泡泡玛特在全球共开设超过550家线下门店和超过2500台机器人商店，并通过多个跨境电商平台触达全球超过90个国家和地区，为全球年轻消费者带来更多快乐。</p>
+            <!-- 隐藏的第二段内容 -->
+            <div class="about-more-content" id="aboutMoreContent" style="display: none;">
+                <p>泡泡玛特建立了多产业链的IP商业化体系，持续加深粉丝与IP的情感连接，探索IP在价值实现路径上更多的可能性。2023年9月，泡泡玛特城市乐园落地北京朝阳公园，成为潮玩行业首个沉浸式IP主题乐园。公司推动了旗下IP与其他知名IP/品牌开展授权或联名合作，在多个国家和地区举办潮流玩具展及IP主题展览，不断扩大旗下IP在全球的影响力。公司也在积极推进原创动画业务，进一步丰富IP的内涵和外延。</p>
+            </div>
+            <div class="toggle-btn" onclick="toggleAbout()">MORE<br><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </section>
+
+    <img src="/labubu/海报1.jpg" alt="" width="100%" height="100%"/>
+    <div class="history">
+        <p class="title">HISTORY</p>
+        <p class="sub_title fz">品牌发展</p>
+        <div class="list">
+            <div class="item">
+                <p class="year">2010</p>
+                <img src="/labubu/H1.jpg" class="icon"/>
+            </div>
+            <div class="item">
+                <p class="year">2015</p>
+                <img src="/labubu/H2.jpg" class="icon"/>
+            </div>
+            <div class="item">
+                <p class="year">2016</p>
+                <img src="/labubu/H3.jpg" class="icon"/>
+            </div>
+            <div class="item">
+                <p class="year">2017</p>
+                <img src="/labubu/H4.jpg" class="icon"/>
+            </div>
+            <div class="item">
+                <p class="year">2018</p>
+                <img src="/labubu/H5.jpg" class="icon"/>
+            </div>
+            <div class="item">
+                <p class="year">2019</p>
+                <img src="/labubu/H6.jpg" class="icon"/>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_con">
+        <div class="en_title">SUPER ARTISTS</div>
+        <div class="cn_title mb80">合作艺术家</div>
+        <div class="banner3"></div>
+        <div class="en_title">COOPERATION</div>
+        <div class="cn_title mb80">合作品牌</div>
+        <div class="banner4"></div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>泡泡玛特粉丝网站，致力于“创造潮流，传递美好”的文化使命。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品展示</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="news.html">新闻资讯</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 泡泡玛特粉丝网站 | 版权所有</p>
+            </div>
+        </div>
+        <button id="back-to-top" style="display: none;" title="回到顶部">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="/labubu/js.js"></script>
+    </footer>
+</body>
+</html>

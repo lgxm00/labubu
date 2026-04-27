@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/labubu/">
+    <title>产品展示</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/labubu/css.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar">
+		<div class="container">
+			<a href="index.html" class="logo"><img src="/labubu/logo1.png" alt="" width="160px" height="50px"/></a>
+			<ul class="nav-links">
+				<li><a href="index.html">首页</a></li>
+
+				<!-- 产品展示 - 添加下拉菜单 -->
+                <li class="dropdown">
+                    <a href="products.html" class="active dropdown-toggle">产品展示
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html?category=doll">玩偶</a></li>
+                        <li><a href="products.html?category=clothing">服饰</a></li>
+                        <li><a href="products.html?category=blindbox">盲盒</a></li>
+                        <li><a href="products.html?category=home">家居用品</a></li>
+                        <li><a href="products.html?category=accessory">配饰</a></li>
+                    </ul>
+                </li>
+
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="news.html">新闻资讯</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+				<li><a href="login.html">登录</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle-btn">🌙 夜间模式</button>
+                </li>
+			</ul> 
+		</div>
+	</nav>
+
+	<!-- 页面标题 -->
+	<img src="/labubu/banner5.jpg" alt="" width="100%" height="100%"/>
+
+	<!-- 产品筛选器 -->
+	<section class="product-filter">
+        <div class="filter-tabs">
+            <button class="tab-btn active" data-value="全部产品">全部产品</button>
+            <button class="tab-btn" data-value="玩偶">玩偶</button>
+            <button class="tab-btn" data-value="服饰">服饰</button>
+            <button class="tab-btn" data-value="盲盒">盲盒</button>
+            <button class="tab-btn" data-value="家居用品">家居用品</button>
+            <button class="tab-btn" data-value="配饰">配饰</button>
+        </div>
+
+		<div class="filter-controls">
+			<select class="sort-select">
+				<option value="default">默认排序</option>
+				<option value="price-low">价格从低到高</option>
+				<option value="price-high">价格从高到低</option>
+				<option value="newest">最新上架</option>
+			</select>
+
+			<div class="search-box">
+				<i class="fas fa-search"></i>
+				<input type="text" placeholder="搜索产品..." />
+			</div>
+		</div>
+	</section>
+
+<!-- 产品列表 -->
+<section class="product-list">
+    <div class="container">
+        <div class="product-grid">
+
+            <!-- 商品 1 -->
+            <div class="product-card" data-category="玩偶">
+                <img src="/labubu/玩偶1.jpg" alt="LABUBU 毛绒玩具" class="product-img" />
+                <div class="product-wenzi">
+                    <h3>THE MONSTERS：象棋大冒險</h3>
+                    <p>獨特之處在於其頭戴皇冠、身披圍巾的造型設計，宛如象棋盤上的小國王。</p>
+                    <div class="price">
+                        <span class="price-value">¥ 189.00</span>
+                        <button class="add-btn add-to-cart" 
+                                data-id="1" 
+                                data-name="THE MONSTERS：象棋大冒險" 
+                                data-spec="款式: 经典款" 
+                                data-price="189.00" 
+                                data-img="img/玩偶1.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品 2 -->
+            <div class="product-card" data-category="玩偶">
+                <img src="/labubu/玩偶2.jpg" alt="LABUBU 毛绒玩具 " class="product-img" />
+                <div class="product-wenzi">
+                    <h3>THE MONSTERS：象棋大冒險</h3>
+                    <p>設計上採用了柔軟毛絨搭配醣膠工藝的小巧造型，讓人愛不釋手。</p>
+                    <div class="price">
+                        <span class="price-value">¥ 240.00</span>
+                        <button class="add-btn add-to-cart" 
+                                data-id="2" 
+                                data-name="THE MONSTERS：象棋大冒險" 
+                                data-spec="款式: 限量款" 
+                                data-price="240.00" 
+                                data-img="img/玩偶2.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品 3 -->
+            <div class="product-card" data-category="玩偶">
+                <img src="/labubu/玩偶3.jpg" alt="LABUBU 毛绒玩具 " class="product-img" />
+                <div class="product-wenzi">
+                    <h3>新春限定系列《Walk by Fortune》</h3>
+                    <p>穿上象徵新春吉祥的可愛服飾，整體造型充滿節慶氛圍。</p>
+                    <div class="price">
+                        <span class="price-value">¥ 1980.00</span>
+                        <button class="add-btn add-to-cart" 
+                                data-id="3" 
+                                data-name="新春限定系列《Walk by Fortune》" 
+                                data-spec="款式: 限量款" 
+                                data-price="1980.00" 
+                                data-img="img/玩偶3.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品 4 -->
+            <div class="product-card" data-category="玩偶" >
+                <img src="/labubu/玩偶4.jpg" alt="《怪味便利店》主題" class="product-img" />
+                <div class="product-wenzi">
+                    <h3>《怪味便利店》主題毛絨搪膠系列</h3>
+                    <p>Labubu以療癒笑容與豐富配件正式開工，準備陪你逛遍潮玩便利店！</p>
+                    <div class="price">
+                        <span class="price-value">¥ 220.00</span>
+                        <button class="add-btn add-to-cart" 
+                                data-id="4" 
+                                data-name="《怪味便利店》主題毛絨搪膠系列" 
+                                data-spec="款式: 联名款" 
+                                data-price="220.00" 
+                                data-img="img/玩偶4.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品 5 -->
+            <div class="product-card" data-category="服饰">
+                <img src="/labubu/服饰1.jpg" alt="Hello Kitty 文具套装" class="product-img" />
+                <div class="product-wenzi">
+                    <h3>SKULLPANDA 系列</h3>
+                    <p>紅黑格紋的潮流單肩包，經典設計與時尚潮流結合，瞬間提升整體造型。</p>
+                    <div class="price">
+                        <span class="price-value">¥ 350.00</span>
+                           <button class="add-btn add-to-cart" 
+                                data-id="5" 
+                                data-name="SKULLPANDA 系列单肩包" 
+                                data-spec="颜色: 红黑" 
+                                data-price="350.00" 
+                                data-img="img/服饰1.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品 6 -->
+            <div class="product-card" data-category="服饰">
+                <img src="/labubu/服饰2.jpg" alt="Dimoo夢裡夢外系列" class="product-img" />
+                <div class="product-wenzi">
+                    <h3>Dimoo夢裡夢外系列</h3>
+                    <p>Dimoo化身為溫暖的守護者，乖巧地窩在被窩造型的手機袋中，既溫暖又療癒</p>
+                    <div class="price">
+                        <span class="price-value">¥ 2999.00</span>
+                        <button class="add-btn add-to-cart" 
+                                data-id="6" 
+                                data-name="Dimoo夢裡夢外系列" 
+                                data-spec="款式: 珍藏款" 
+                                data-price="2999.00" 
+                                data-img="img/服饰2.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品 7 -->
+            <div class="product-card" data-category="盲盒">
+                <img src="/labubu/盲盒1.jpg" alt="《瘋狂動物城2》系列手辦盲盒" class="product-img" />
+                <div class="product-wenzi">
+                    <h3>《瘋狂動物城2》系列手辦盲盒</h3>
+                    <p>全新 Molly ×《動物方城市2》系列手辦盲盒，以經典角色掀起收藏熱潮。</p>
+                    <div class="price">
+                        <span class="price-value">¥300.00</span>
+                        <button class="add-btn add-to-cart" 
+                                data-id="7" 
+                                data-name="《瘋狂動物城2》系列手辦盲盒" 
+                                data-spec="款式: 经典款" 
+                                data-price="300.00" 
+                                data-img="img/盲盒1.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品 8 -->
+            <div class="product-card" data-category="盲盒">
+                <img src="/labubu/盲盒2.jpg" alt="《小手拉小手》系列盲盒" class="product-img" />
+                <div class="product-wenzi">
+                    <h3>《小手拉小手》系列盲盒</h3>
+                    <p>每一款都蘊含情感，更以自然與友誼為主題，打造一場療癒心靈的郊遊。</p>
+                    <div class="price">
+                        <span class="price-value">¥ 69.00</span>
+                        <button class="add-btn add-to-cart" 
+                                data-id="8" 
+                                data-name="《小手拉小手》系列盲盒" 
+                                data-spec="款式: 经典款" 
+                                data-price="69.00" 
+                                data-img="img/盲盒2.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品 9 -->
+            <div class="product-card" data-category="家居用品">
+                <img src="/labubu/家居用品1.jpg" alt="LABUBU 可爱马克杯" class="product-img" />
+                <div class="product-wenzi">
+                    <h3>LABUBU 可爱马克杯</h3>
+                    <p>馬克杯採用象棋元素裝飾，既是實用的飲品容器，也是一件獨特的桌面擺設。</p>
+                    <div class="price">
+                        <span class="price-value">¥ 3500.00</span>
+                        <button class="add-btn add-to-cart" 
+                                data-id="9" 
+                                data-name="LABUBU 可爱马克杯" 
+                                data-spec="款式: 珍藏款" 
+                                data-price="3500.00" 
+                                data-img="img/家居用品1.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品 10 -->
+            <div class="product-card" data-category="家居用品">
+                <img src="/labubu/家居用品2.jpg" alt="草莓奶昔系列" class="product-img" />
+                <div class="product-wenzi">
+                    <h3>草莓奶昔系列公仔套裝</h3>
+                    <p>充滿甜美氛圍的套裝，取材自草莓奶昔的設計靈感。</p>
+                    <div class="price">
+                        <span class="price-value">¥ 210.00</span>
+                        <button class="add-btn add-to-cart" 
+                                data-id="10" 
+                                data-name="草莓奶昔系列公仔套裝" 
+                                data-spec="款式: 联名款" 
+                                data-price="210.00" 
+                                data-img="img/家居用品2.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品 11 -->
+            <div class="product-card" data-category="配饰">
+                <img src="/labubu/配饰1.jpg" alt="新加坡限定魚尾獅掛件" class="product-img" />
+                <div class="product-wenzi">
+                    <h3>新加坡限定魚尾獅掛件</h3>
+                    <p>以 LABUBU 為主角，融合新加坡的獨特靈感，呈現出可愛又實用的吊飾玩偶。</p>
+                    <div class="price">
+                        <span class="price-value">¥ 200.00</span>
+                        <button class="add-btn add-to-cart" 
+                                data-id="11" 
+                                data-name="新加坡限定魚尾獅掛件" 
+                                data-spec="款式: 限量款" 
+                                data-price="200.00" 
+                                data-img="img/配饰1.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商品 12 -->
+            <div class="product-card" data-category="配饰">
+                <img src="/labubu/配饰2.jpg" alt="LABUBU 精美吊饰" class="product-img" />
+                <div class="product-wenzi">
+                    <h3>LABUBU 精美吊饰</h3>
+                    <p>對於熱衷项链的人來說，這款系列絕對值得入手，能增添生活中的趣味。</p>
+                    <div class="price">
+                        <span class="price-value">¥ 350.00</span>
+                        <button class="add-btn add-to-cart" 
+                                data-id="12" 
+                                data-name="LABUBU 精美吊饰" 
+                                data-spec="款式: 经典款" 
+                                data-price="350.00" 
+                                data-img="img/配饰2.jpg">
+                            加入购物车
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 加载更多按钮 -->
+        <div class="load-more">
+            <button class="btn">加载更多产品 ↓</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>泡泡玛特粉丝网站，致力于“创造潮流，传递美好”的文化使命。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品展示</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="news.html">新闻资讯</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 泡泡玛特粉丝网站 | 版权所有</p>
+            </div>
+        </div>
+        <button id="back-to-top" style="display: none;" title="回到顶部">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="/labubu/products.js"></script>
+    </footer>
+</body>
+</html>

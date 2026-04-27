@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到泡泡玛特</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/labubu/css.css">
+	<style>
+		.intro-content{
+			justify-content: space-between;
+		}
+	</style>
+</head>
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar">
+		<div class="container">
+			<a href="index.html" class="logo"><img src="/labubu/logo1.png" alt="" width="160px" height="50px"/></a>
+			<ul class="nav-links">
+				<li><a href="index.html" class="active">首页</a></li>
+
+				<!-- 产品展示 - 添加下拉菜单 -->
+				<li class="dropdown">
+					<a href="products.html" class="dropdown-toggle">产品展示
+						<i class="fa-solid fa-chevron-down"></i>
+					</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html?category=doll">玩偶</a></li>
+                        <li><a href="products.html?category=clothing">服饰</a></li>
+                        <li><a href="products.html?category=blindbox">盲盒</a></li>
+                        <li><a href="products.html?category=home">家居用品</a></li>
+                        <li><a href="products.html?category=accessory">配饰</a></li>
+                    </ul>
+				</li>
+
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="news.html">新闻资讯</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+				<li><a href="login.html">登录</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle-btn">🌙 夜间模式</button>
+                </li>
+			</ul>
+		</div>
+	</nav>
+
+    <!-- 轮播图 -->
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/labubu/拉布布1.jpg" alt="拉布布1">
+                <div class="carousel-caption">
+                    <p>To light up passion and bring joy</p>
+                    <h2>POP MART</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/labubu/拉布布2.jpg" alt="拉布布2">
+                <div class="carousel-caption">
+                    <p>To light up passion and bring joy</p>
+                    <h2>POP MART</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/labubu/拉布布3.jpg" alt="拉布布3">
+                <div class="carousel-caption">
+                    <p>To light up passion and bring joy</p>
+                    <h2>POP MART</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel-indicators">
+            <span class="indicator active" data-index="0"></span>
+            <span class="indicator" data-index="1"></span>
+            <span class="indicator" data-index="2"></span>
+        </div>
+    </div>
+
+    <!-- 简介部分 -->
+    <section class="intro section">
+        <div class="container">
+            <h2 class="section-title">ABOUT US</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p style="line-height: 2;">
+                    北京泡泡玛特文化创意有限公司成立于2010年，是中国领先的潮流文化娱乐公司。
+                    <br>
+                    发展十余年来，围绕全球艺术家挖掘、IP孵化运营、消费者触达、潮玩文化推广、关联产业投资整合五个领域，
+                    <br>
+                    构建了覆盖潮流玩具全产业链的综合运营平台。</p>
+                    <a href="about.html" class="btn">MORE ></a>
+                </div>
+            </div>
+        </div>
+        <div class="container"> 
+            <div class="intro-content">
+                <video src="/labubu/v1.mp4" controls muted loop></video>
+            </div>
+        </div>
+        <!-- 在视频下方添加特色部分 -->
+        <div class="container">
+            <div class="feature-section">
+                <h2 class="feature-title">To Light Up Passion And Bring Joy</h2>
+                <p class="feature-subtitle">创造潮流 传递美好</p>   
+                <div class="feature-grid">
+                    <!-- 设计师 -->
+                    <div class="feature-item">
+                        <h3>设计师</h3>
+                        <p>签约 Kenny、毕奇、龙家升等知名潮玩设计师，推出众多粉丝喜爱的潮玩产品</p>
+                    </div>
+                    <!-- 潮流文化 -->
+                    <div class="feature-item">
+                        <h3>潮流文化</h3>
+                        <p>将艺术，设计，潮流、绘画、雕塑等多元素的理念注入在一个个小小的玩具中</p>
+                    </div>
+                    <!-- 品牌授权 -->
+                    <div class="feature-item">
+                        <h3>品牌授权</h3>
+                        <p>旗下众IP与各界知名品牌联名合作，强强联合打造时下年轻消费者喜爱的出圈爆品。</p>
+                    </div>
+                    <!-- 潮流展会 -->
+                    <div class="feature-item">
+                        <h3>潮流展会</h3>
+                        <p>让更多国外潮玩品牌关注国内市场，为中国潮流玩具文化的蓬勃发展增添动力</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 替换原来的 TOP-section 内容 -->
+        <div class="TOP-section" id="slideBox">
+            <!-- 图片 -->
+            <img src="/labubu/背景1.jpg" class="slide-img on" alt="">
+            <img src="/labubu/背景2.jpg" class="slide-img" alt="">
+            <img src="/labubu/背景3.jpg" class="slide-img" alt="">
+            <img src="/labubu/背景4.jpg" class="slide-img" alt="">
+            <img src="/labubu/背景5.jpg" class="slide-img" alt="">
+
+            <div class="text-overlay">
+                <h2>TOP SELLING PRODUCTS</h2>
+                <p>热门商品</p>
+            </div>
+
+            <!-- 左右切换按钮（使用全新类名） -->
+            <button class="top-prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="top-next-btn"><i class="fas fa-chevron-right"></i></button>
+
+            <!-- 指示器 -->
+            <div id="btns">
+                <div class="slide-indicator" data-index="0"></div>
+                <div class="slide-indicator" data-index="1"></div>
+                <div class="slide-indicator" data-index="2"></div>
+                <div class="slide-indicator" data-index="3"></div>
+                <div class="slide-indicator" data-index="4"></div>
+            </div>
+        </div>
+        <!-- NEWS 模块 -->
+        <div class="container">
+            <div class="news-section">
+                <h2 class="section-title">NEWS</h2>
+                <p class="section-subtitle">媒体新闻</p>
+
+                <div class="news-grid">
+                    <!-- 第一行 -->
+                    <div class="news-item">
+                        <img src="/labubu/news1.jpg" alt="新闻1">
+                        <div class="news-overlay">
+                            <h3>泡泡玛特首次登陆美国梅西百货节日花车游行 2025上...</h3>
+                            <p>在刚刚过去的11月，泡泡玛特携旗下LABUBU、SKULLPANDA、MOLLY、DIMOO等多款超人气...</p>
+                            <a href="https://www.cnstock.com/commonDetail/596751?timestap=1764678227885" class="more-link">MORE ></a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="/labubu/news2.jpg" alt="新闻2">
+                        <div class="news-overlay">
+                            <h3>荣登2025北京民营企业百强榜单!</h3>
+                            <p>9月19日下午，2025北京民营企业100强发布会举行。泡泡玛特荣登北京民营企业百强榜单及文化产…</p>
+                            <a href="https://mp.weixin.qq.com/s/-_8cYpqdlMsaFRRXg3tsUA" class="more-link">MORE ></a>
+                        </div>
+                    
+                    </div>
+                    <div class="news-item">
+                        <img src="/labubu/news3.jpg" alt="新闻2">
+                        <div class="news-overlay">
+                            <h3>泡泡玛特携星星人点亮上海国际光影节 以IP传递公益...</h3>
+                            <p>9月19日至10月18日，第二届上海国际光影书正式开幕。泡泡玛特携旗下知名IP星星人深度参号。</p>
+                            <a href="https://www.cnstock.com/commonDetail/544946" class="more-link">MORE ></a>
+                        </div>
+                    </div>
+
+                    <!-- 第二行 -->
+                    <div class="news-item">
+                        <img src="/labubu/news4.jpg" alt="新闻2">
+                        <div class="news-overlay">
+                            <h3>泡泡玛特十五周年 | KEEPREAL KEEP FOCUS</h3>
+                            <p>十五年前，我们怀揣着传递快乐的梦想，从北京中关村的一家小店启程。如今，我们已慢慢长大，这份...</p>
+                            <a href="https://mp.weixin.qq.com/s/oR7fWgIobbKmm1c6MH9aUw" class="more-link">MORE ></a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="/labubu/news5.jpg" alt="新闻2">
+                        <div class="news-overlay">
+                            <h3>泡泡玛特2025半年报发布 营收、净利润均超2024全年...</h3>
+                            <p>8月19日，泡泡玛特国际集团发布2025年半年报，半年营收突破百亿，净利润超2024全年，集团业绩...</p>
+                            <a href="https://www.xinhuanet.com/tech/20250820/662517765fb040baafc93ec4ef647d24/c.html" class="more-link">MORE ></a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="/labubu/news6.jpg" alt="新闻2">
+                        <div class="news-overlay">
+                            <h3>泡泡玛特西班牙首店正式开业 引领欧洲消费新潮流...</h3>
+                            <p>8月2日，泡泡玛特在西班牙巴塞罗那开设的首家门店正式开业，标志着泡泡玛特在南欧区域的战略...</p>
+                            <a href="https://www.jiemian.com/article/13132663.html" class="more-link">MORE ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-more">
+                    <a href="news.html" class="btn">MORE ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>泡泡玛特粉丝网站，致力于“创造潮流，传递美好”的文化使命。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品展示</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="news.html">新闻资讯</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 泡泡玛特粉丝网站 | 版权所有</p>
+            </div>
+        </div>
+        <button id="back-to-top" style="display: none;" title="回到顶部">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="/labubu/js.js"></script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/labubu/">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/labubu/css.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar">
+		<div class="container">
+			<a href="index.html" class="logo"><img src="/labubu/logo1.png" alt="" width="160px" height="50px"/></a>
+			<ul class="nav-links">
+				<li><a href="index.html">首页</a></li>
+
+				<!-- 产品展示 - 添加下拉菜单 -->
+				<li class="dropdown">
+					<a href="products.html" class="dropdown-toggle">产品展示
+						<i class="fa-solid fa-chevron-down"></i>
+					</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html?category=doll">玩偶</a></li>
+                        <li><a href="products.html?category=clothing">服饰</a></li>
+                        <li><a href="products.html?category=blindbox">盲盒</a></li>
+                        <li><a href="products.html?category=home">家居用品</a></li>
+                        <li><a href="products.html?category=accessory">配饰</a></li>
+                    </ul>
+				</li>
+
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="news.html">新闻资讯</a></li>
+				<li><a href="contact.html" class="active">联系我们</a></li>
+				<li><a href="login.html">登录</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle-btn">🌙 夜间模式</button>
+                </li>
+			</ul>
+		</div>
+	</nav>
+
+    <!-- 页面标题 -->
+    <img src="/labubu/banner6.jpg" alt="" width="100%" height="100%"/>
+
+    <!-- 联系表单 -->
+    <section class="contact section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>联系信息</h3>
+                    <p>如果您有任何问题、建议或合作意向，请通过以下方式联系我们：</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>POPMART中心广场 123号</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+86 123 4567 8901</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@paopaomate.com</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>周一至周五: 9:00-18:00</span>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>发送消息</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">主题</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">消息</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>泡泡玛特粉丝网站，致力于“创造潮流，传递美好”的文化使命。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品展示</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="news.html">新闻资讯</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 泡泡玛特粉丝网站 | 版权所有</p>
+            </div>
+        </div>
+        <button id="back-to-top" style="display: none;" title="回到顶部">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script src="/labubu/js.js"></script>
+    </footer>
+</body>
+</html>

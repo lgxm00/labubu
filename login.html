@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="/labubu/login.css">
+	</head>
+	<body>
+		<video src="/labubu/v2.mp4" autoplay muted loop></video>
+		<div class="container">
+			<div class="form-box">
+				<div class="register-box hidden">
+					<h1>注册</h1>
+					<input type="text" placeholder="用户名" />
+					<input type="email" placeholder="邮箱" />
+					<input type="password" placeholder="密码" />
+					<input type="password" placeholder="确认密码" />
+					<a href="index.html"><button>注册</button> </a>
+					<a href="index.html"><button>
+							返回首页
+						</button></a>
+				</div>
+				<div class="login-box">
+					<h1>登录</h1>
+					<input type="text" placeholder="用户名" />
+					<input type="password" placeholder="密码" />
+					<a href="index.html"> <button>登录</button></a>
+					<a href="index.html"><button>
+							返回首页
+						</button></a>
+				</div>
+			</div>
+			<div class="con-box left">
+				<h2>欢迎来到<span><br />loading</span></h2>
+				<p>欢迎注册<span>POPMART</span></p>
+				<img src="/labubu/to1.jpg" alt="" />
+				<p>已有账号</p>
+				<button id="login">去登录</button>
+			</div>
+			<div class="con-box right">
+				<h2>欢迎进入<span> <br />loading</span></h2>
+				<p>欢迎登录<span>POPMART</span></p>
+				<img src="/labubu/to.jpg" alt="" />
+				<p>没有账号?</p>
+				<button id="register">去注册</button>
+			</div>
+		</div>		
+		<script>
+			let login = document.getElementById('login');
+			let register = document.getElementById('register');
+			let form_box = document.getElementsByClassName('form-box')[0];
+			let register_box = document.getElementsByClassName('register-box')[0];
+			let login_box = document.getElementsByClassName('login-box')[0];
+			
+			// 点击注册
+			register.addEventListener('click', () => {
+				form_box.style.transform = 'translateX(80%)';
+				form_box.style.backgroundColor = 'rgb(231, 193, 214)';
+				login_box.classList.add('hidden');
+				register_box.classList.remove('hidden');
+			})
+
+			// 点击登录
+			login.addEventListener('click', () => {
+				form_box.style.transform = 'translateX(0%)';
+				form_box.style.backgroundColor = 'rgb(91, 74, 66)';
+				register_box.classList.add('hidden');
+				login_box.classList.remove('hidden');
+			})
+		</script>
+	</body>
+</html>
